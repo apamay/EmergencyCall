@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EmergencyCall</string>
+    <string name="title_activity_user_register">userRegisterActivity</string>
+    <string name="title_activity_hosp_register">hospRegisterActivity</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apamay.emergencycall">
+
+    <!-- adding internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--&lt;!&ndash;location&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".userLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".userRegisterActivity"
+            android:label="@string/title_activity_user_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hospRegisterActivity"
+            android:label="@string/title_activity_hosp_register"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".hospBookActivity" />
+        <activity android:name=".hospDetailActivity" />
+        <activity android:name=".mapDirectionActivity" />
+        <activity android:name=".showFavActivity" />
+        <activity android:name=".hospLoginActivity" />
+        <activity android:name=".hosReqTrackActivity" />
+        <activity android:name=".hosBookErrorActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".userLogout"></activity>
+    </application>
+
+</manifest>
